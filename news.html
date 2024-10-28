@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - ASG Logistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- I have added top navigation link -->
+    <!-- Header Section -->
+    <header>
+        <hr>
+        <h1>ASG Logistics News</h1>
+        <!-- Navigation Links -->
+        <nav id="topLinks">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active">News</li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- More  information is addedin this section-->
+    <!-- Logo and Introduction Section -->
+    <section class="text-center logo">
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+        <h2>The New Service Delivery Post</h2>
+        <p class="intro-text">In a groundbreaking shift, drone technology is rapidly reshaping how goods are delivered to customers. Major companies, including Amazon and Walmart, are leading the charge by using unmanned aerial vehicles (UAVs) to speed up delivery services. This cutting-edge innovation promises to drastically reduce delivery times, optimize logistics, and minimize environmental impact.</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <div class="row">
+            <!-- First News Article -->
+            <div class="col news-article">
+                <h3>Delivery Fee Charges Dropping</h3>
+                <p>
+                    In recent months, delivery fee charges have seen a notable decline, benefiting consumers who frequently order goods and services online. This reduction can be attributed to increased competition among delivery platforms, advancements in logistics technology, and growing customer demand for more affordable options.
+                </p>
+                <p>
+                    As companies strive to attract and retain customers, they are finding innovative ways to lower operational costs, passing on the savings to consumers in the form of reduced fees. This trend is expected to continue, making online shopping and delivery services more accessible and cost-effective for a broader audience.
+                </p>
+            </div>
+
+            <!-- Second News Article -->
+            <div class="col news-article">
+                <h3>Our Drones Will Carry Loadweight Goods & Services</h3>
+                <p>
+                    Our drones are set to revolutionize the delivery industry by carrying load weight goods and services efficiently and reliably. These advanced drones are designed to handle substantial payloads, ensuring that even heavier items can be delivered swiftly and securely.
+                </p>
+                <p>
+                    By leveraging cutting-edge technology, our drones can navigate complex environments and reach destinations faster than traditional delivery methods. This innovation not only reduces delivery times but also minimizes costs, providing customers with a more convenient and affordable service.
+                </p>
+
+                <h3>Challenges and Regulations</h3>
+                <p>
+                    Despite the promise of drone delivery, there are still challenges to overcome. Regulatory approval is required from agencies like the Federal Aviation Administration (FAA) in the U.S. to ensure the safe operation of drones in populated areas. Additionally, concerns about privacy, noise pollution, and the ability to scale drone delivery for larger packages remain hurdles for widespread adoption.
+                </p>
+
+                <h3>What the Future Holds</h3>
+                <p>
+                    Experts predict that as drone technology continues to evolve, it will become an integral part of last-mile delivery. Industry forecasts estimate that by 2030, drones could account for up to 30% of all online orders, especially for urgent deliveries like medication, food, and smaller consumer goods.
+                </p>
+                <p>
+                    Drone delivery has the potential to change how we shop and receive goods, offering unparalleled speed and convenience.
+                </p>
+            </div>
+
+            <!-- Discussion Section -->
+            <div class="discussion">
+                <h4>Share Your Thoughts!</h4>
+                <p>
+                    What do you think about drone delivery? Do you think it's the future of online shopping, or are there too many risks? Let us know in the comments below.
+                </p>
+
+                <!-- Comment Form -->
+                 <form id="commentForm" class="commentForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Your thoughts..." required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <ul id="commentList"></ul>
+
+                 </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <nav id="bottomLinks">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active">News</li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!--Added new all rights reserved policy-->
+        <p><sup>ASG/2024 &#169;</sup> <br>
+            All Rights Reserved.</p>
+    </footer>
+
+    <!--OpenAI. 2024. Chat-GPT (Version 3.5). [Large language model] Available at: https://chatgpt.com/c/66daa88c-8c7c-8013-aebc-e08d428e9c10 [Accessed: 14 September 2024]-->
+    <!-- JavaScript to Handle Form Submission -->
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+
+            // Simple form validation (more robust validation can be added)
+            if(name && email && comment) {
+                // Create a new comment list item
+                const commentItem = document.createElement('li');
+                commentItem.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+
+                // Add the comment to the comment list
+                document.getElementById('commentList').appendChild(commentItem);
+
+                // Clear the form fields
+                document.getElementById('commentForm').reset();
+            }
+        });
+    </script>
+    
+</body>
+</html>

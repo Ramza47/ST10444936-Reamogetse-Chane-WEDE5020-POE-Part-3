@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASG Logistics | Services</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="ASG Logistics offers state-of-the-art drone delivery services for fast, eco-friendly, and reliable delivery of your products. Experience next-generation logistics!">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="drone delivery, ASG logistics, fast delivery, eco-friendly delivery, reliable delivery, next-gen logistics">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ASG Logistics | Drone Delivery Services">
+    <meta property="og:description" content="Experience fast, eco-friendly drone deliveries with ASG Logistics. Get your products delivered efficiently and securely with our cutting-edge drone technology.">
+    <meta property="og:image" content="./_images/Drone package.jpg">
+    <meta property="og:url" content="https://asglogistics.com/services">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ASG Logistics | Drone Delivery Services">
+    <meta name="twitter:description" content="ASG Logistics uses advanced drone technology for fast and eco-friendly deliveries. Receive your packages within minutes.">
+    <meta name="twitter:image" content="./_images/Drone package.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- https://www.w3schools.com/css/default.asp -->
+     <!-- Top Section with Navigation -->
+    <header>
+        <hr>
+        <h1>Services</h1>
+        <nav id="topLinks">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li>Services</li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Types of Services We Offer at ASG Logistics</h2>
+            <p>At ASG, we utilize state-of-the-art drone technology to bring packages directly to our customers. Our drone delivery service offers a fast, safe, and environmentally friendly way to receive your purchases.</p>
+
+            <div class="image-gallery"> <!--Marcofedermann. 2021. Port Container Cranes Sunset. [Online]. Available at: https://pixabay.com/photos/port-container-cranes-sunset-river-6131793/[Accessed on 7 August 2024].-->
+                <img src="./_images/Drone  1.jpg" alt="Drone performing a delivery service" class="image" loading="lazy">
+                <img src="./_images/Port.png" alt="Shipping port with container cranes" class="image">
+            </div>
+            <p class="caption">Our delivery products are imported from various countries.</p>
+
+            <div class="image-gallery">
+                <img src="./_images/Warehouse.png" alt="Warehouse Storage facility" class="image" loading="lazy">
+            </div>
+            <p class="caption">Our goods and services are stored in a warehouse and ready to be distributed.</p>
+
+            <div class="image-gallery">
+                <img src="./_images/Plane delivery.png" alt="Plane Delivery" class="image" loading="lazy">
+                <img src="./_images/Plane delivery 2.png" alt="Air Cargo" class="image" loading="lazy">
+            </div>
+
+            <!-- Added more information in this section -->
+            <h3>Why Choose Drone Delivery?</h3>
+            <p>Our drones offer lightning-fast delivery, bypassing traditional roadways and traffic. With our real-time tracking system, you can monitor your package`s journey from the warehouse to your door. We deliver packages within minutes, ensuring convenience and efficiency.</p>
+
+            <div class="image-gallery"><!--iStock. 2021. Drone delivery concept. Autonomous unmanned aerial vehicle for transporting packages. [Online]. Available at: https://www.istockphoto.com/de/foto/drohnen-lieferkonzept-autonomes-unbemanntes-luftfahrzeug-zum-transport-von-paketen-3d-gm1294781161-388678661 [Accessed on: 7 August 2024].-->
+                <img src="./_images/Drone package.jpg" alt="Drone Delivering Package" class="image" loading="lazy">
+            </div>
+            <p class="caption">Our drones in action, delivering products to customers.</p>
+
+            <div class="image-gallery">
+                <img src="./_images/Drone delivery.png" alt="Heavy Product Drone Delivery" class="image" loading="lazy">
+                <img src="./_images/Drone Cart.png" alt="Drone Carrying Cart" class="image" loading="lazy">
+            </div>
+            <p class="caption">Our drones are capable of carrying heavy products.</p>
+
+            <p>Equipped with high-tech cameras, our drones can reach various locations efficiently, ensuring customer satisfaction. Order from ASG Logistics and receive your parcel within a day!</p>
+
+            <h3>How It Works</h3>
+            
+            <!-- https://www.w3schools.com/css/default.asp -->
+            <ol>
+                <li><strong>Place Your Order:</strong> Choose your products and select the drone delivery option at checkout.</li>
+                <li><strong>Drone Dispatch:</strong> Once your order is prepared, the nearest drone is dispatched to your location. You will receive a notification when your package is loaded and en route.</li>
+                <li><strong>Receive Your Delivery:</strong> Our drones use precision landing technology to ensure safe, accurate drop-offs at your chosen location.</li>
+                <li><strong>Enjoy:</strong> Your package arrives quickly, ready for you to use or enjoy!</li>
+            </ol>
+
+            <h3>Safety and Regulations</h3>
+            <p>Safety is our top priority at ASG Logistics. Our drones comply with local and federal aviation regulations and are equipped with advanced obstacle avoidance systems. Each drone has redundant safety features to ensure secure operations in all weather conditions.</p>
+
+            <h3>Ready to Experience the Future of Delivery?</h3>
+            <p>Try our drone delivery service today and enjoy the convenience of next-generation logistics!</p>
+        </section>
+    </main>
+    
+
+    <!-- OpenAI. 2024. Chat-GPT (Version 3.5). [Large language model] Available at: https://chatgpt.com/c/671200cd-6aa8-8013-aeb6-e2724a310fa8 [Accessed: 18 September 2024] */ -->
+     <!-- Lightbox container -->
+     <div id="lightbox" class="lightbox"> 
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Large Image">
+        </div>
+    </div>
+
+
+    <!-- Bottom Navigation -->    
+    <footer>
+        <hr>
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li>Services</li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <hr>
+        
+        <!--Added new all rights reserved policy-->
+        <p><sup>ASG/2024 &#169;</sup> <br>
+            All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Lightbox -->
+    <script> /* OpenAI. 2024. Chat-GPT (Version 3.5). [Large language model] Available at: https://chatgpt.com/c/671200cd-6aa8-8013-aeb6-e2724a310fa8 [Accessed: 18 September 2024] */
+        const images = document.querySelectorAll('.image-gallery .image');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        let currentIndex = 0;
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                openLightbox(index);
+            });
+        });
+
+        function openLightbox(index) {
+            lightbox.style.display = 'block';
+            currentIndex = index;
+            displayImage(currentIndex);
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        function changeImage(step) {
+            currentIndex = (currentIndex + step + images.length) % images.length;
+            displayImage(currentIndex);
+        }
+
+        function displayImage(index) {
+            lightboxImg.src = images[index].src;
+        }
+    </script>
+</body>
+</html>
